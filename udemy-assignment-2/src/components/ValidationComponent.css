@@ -1,0 +1,10 @@
+.status {
+    font-size: smaller;
+    font-weight: normal;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
