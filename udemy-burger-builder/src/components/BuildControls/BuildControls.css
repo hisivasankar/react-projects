@@ -1,0 +1,7 @@
+.BuildControls {
+    background: rgb(207, 123, 112);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
