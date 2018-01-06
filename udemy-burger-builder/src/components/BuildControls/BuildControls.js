@@ -17,14 +17,16 @@ const controls = [{
     type: 'bacon'
 }];
 
-const BuildControls = () => {
+const BuildControls = (props) => {
     return (
         <div className={classes.BuildControls}>
             {controls.map(ctrl => {
                 return (
                     <BuildControl
                         label={ctrl.label}
-                        />
+                        added={() => props.added(ctrl.type)}
+                        remove={() => props.removed(ctrl.type)}
+                        disable={props.disable[ctrl.type]}/>
                 );     
             })}
         </div>
