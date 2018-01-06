@@ -7,18 +7,18 @@ const INGREDIENT_PRICES = {
     bacon: 1.2,
     meat: 1.5,
     cheese: 0.8
-};
+}, BREAD_PRICE = 4;
 
 
 class BurgerBuilder extends Component {
     state = {
         ingredients: {
-            salad: 1,
+            salad: 0,
             bacon: 0,
-            cheese: 1,
-            meat: 1
+            cheese: 0,
+            meat: 0
         },
-        totalPrice: 4
+        totalPrice: BREAD_PRICE
     };
 
     ingredientAdded = (type) => {
@@ -66,7 +66,8 @@ class BurgerBuilder extends Component {
                     added={this.ingredientAdded}
                     removed={this.ingredientRemoved}
                     disable={disabledInfo}
-                    price={this.state.totalPrice}/>
+                    price={this.state.totalPrice}
+                    disableOrder={this.state.totalPrice <= BREAD_PRICE}/>
             </div>
         )
     }
