@@ -1,0 +1,19 @@
+.new-post {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.new-post > * {
+    margin: 10px;
+    padding: 10px;
+}
+
+.new-post input, textarea, select {
+    width: 90%;
+}
+
+.new-post button {
+    width: 10rem;
+    height: 2rem;
+}

@@ -1,0 +1,12 @@
+.full-post {
+    min-height: 200px;
+    text-align: center;
+}
+
+.full-post h1, h2, h3 {
+    text-align: center;
+}
+
+.full-post input, textarea {
+    width: 100%;
+}

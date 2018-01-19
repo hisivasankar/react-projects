@@ -1,0 +1,14 @@
+.post {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    background: rgb(243, 241, 241);
+    box-shadow: 2px 3px rgb(204, 202, 202);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
